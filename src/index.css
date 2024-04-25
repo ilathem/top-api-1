@@ -14,23 +14,47 @@ img {
   margin: auto;
 }
 
-.btn-container {
+.query-container {
   position: absolute;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   top: 1em;
 }
 
-button {
+.query-container > input,
+.query-container > button {
   background: black;
   border: 1px solid rgb(0, 0, 255);
   border-radius: 10px;
   padding: 1em 2em;
   color: white;
   font-size: 2rem;
-  cursor: pointer;
   transition: background 100ms;
+}
+
+label {
+  color: white;
+  opacity: .8;
+  font-size: 1.5rem;
+  margin-bottom: .25em;
+}
+
+#input {
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+span {
+  font-size: 1.25rem;
+  opacity: .75;
 }
 
 button:hover {
