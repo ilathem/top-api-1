@@ -21,7 +21,7 @@ const fetchAnImage = () => {
   )
     .then((res) => res.json())
     .then((json) => {
-      if (Array.isArray(json.data)) {
+      if (Array.isArray(json.data) && json.status === 200) {
         Toastify({
           text: 'Nothing found with that query! :(',
           style: {
