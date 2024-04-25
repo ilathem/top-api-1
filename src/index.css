@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background-color: black;
   display: grid;
   height: 100%;
@@ -11,4 +12,31 @@ html, body {
 
 img {
   margin: auto;
+}
+
+.btn-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 1em;
+}
+
+button {
+  background: black;
+  border: 1px solid rgb(0, 0, 255);
+  border-radius: 10px;
+  padding: 1em 2em;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 100ms;
+}
+
+button:hover {
+  background: rgba(0, 0, 255, 0.1);
+}
+
+button:active {
+  background: rgba(0, 0, 255, 0.2);
 }
